@@ -10,3 +10,4 @@ npm-debug.log
 # App
 /release
 /logs
+/data
