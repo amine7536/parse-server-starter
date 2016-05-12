@@ -45,6 +45,7 @@ if (DASHBOARD_AUTH) {
  */
 const dashboard = new ParseDashboard({
   users,
+  allowInsecureHTTP: 1,
   apps: [
     {
       serverURL: '/parse',
