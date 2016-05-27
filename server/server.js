@@ -6,8 +6,9 @@ import ParseDashboard from 'parse-dashboard';
 
 const SERVER_PORT = process.env.PORT || 8080;
 const SERVER_HOST = process.env.HOST || 'localhost';
-const APP_ID = process.env.APP_ID || 'photogram-codeur-com';
+const APP_ID = process.env.APP_ID || 'sample-app';
 const MASTER_KEY = process.env.MASTER_KEY || 'c7ad3d70c6093dba5a7e55968a1d3e5a74ef5cac';
+const FILE_KEY = process.env.FILE_KEY || 'f33f9ba9-c1a9-4589-9976-95cac0d52cd5';
 const DATABASE_URI = process.env.DATABASE_URI || 'mongodb://localhost:27017/dev';
 const DASHBOARD_AUTH = process.env.DASHBOARD_AUTH;
 
@@ -28,7 +29,7 @@ const api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || path.resolve(__dirname, 'cloud.js'),
   appId: APP_ID,
   masterKey: MASTER_KEY,
-  fileKey: 'f33fc1a9-9ba9-4589-95ca-9976c0d52cd5',
+  fileKey: FILE_KEY,
   serverURL: `http://${SERVER_HOST}:${SERVER_PORT}/parse`,
 });
 server.use('/parse', api);
