@@ -11,7 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . /opt/parse
 
-ENV SERVER_PORT 8080
+ENV PORT 8080
 ENV APP_ID 'YOUR_APPLICATION_ID'
 ENV MASTER_KEY 'YOUR_MASTER_KEY_HERE'
 ENV DATABASE_URI 'mongodb://localhost:27017/dev'

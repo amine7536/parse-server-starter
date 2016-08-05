@@ -21,9 +21,9 @@ const DASHBOARD_AUTH = process.env.DASHBOARD_AUTH || 'user:changeme';
 const EMAIL_FROM_ADDRESS = process.env.EMAIL_FROM_ADDRESS || 'no-reply@parseapps.com';
 const EMAIL_DOMAIN = process.env.EMAIL_DOMAIN || 'parseapps.com';
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || 'YOUR_MAILGUN_API_KEY_HERE';
-const PUSH_IOS_PFX = process.env.PUSH_IOS_PFX;
+const PUSH_IOS_PFX = process.env.PUSH_IOS_PFX || '/certs/dev-pfx.p12';
 const PUSH_IOS_PFX_PASSPHRASE = process.env.PUSH_IOS_PFX_PASSPHRASE || '';
-const PUSH_IOS_BUNDLEID = process.env.PUSH_IOS_BUNDLEID;
+const PUSH_IOS_BUNDLEID = process.env.PUSH_IOS_BUNDLEID || 'YOUR_APP_BUNDLE_ID';
 const PUSH_IOS_MODE = process.env.PUSH_IOS_MODE || false;
 
 
